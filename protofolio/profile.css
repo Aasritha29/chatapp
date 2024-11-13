@@ -1,0 +1,41 @@
+/* ---variables--- */
+:root{
+   --blue:blue;
+   --pink:pink;
+   --cyan-light:cyan;
+   --white:white;
+   --orange:orange;
+    --primary-color:#f15bb5;
+    --green-yellow:green;
+    ;
+
+}
+
+
+/* ---global settings--- */
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    outline:none;
+}
+
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    background-image: linear-gradient(to bottom right,var(--primary-color),var(--cyan-light));
+}
+
+body::before{
+    content:'';
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color: var(--green-yellow);
+}
